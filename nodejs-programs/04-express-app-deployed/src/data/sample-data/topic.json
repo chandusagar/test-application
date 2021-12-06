@@ -1,0 +1,9 @@
+{
+    "workshopId": "6196285e4821a8ded1ef5205",
+    "sequenceId": 1,
+    "name": "Mongo DB",
+    "speaker": "John Doe",
+    "duration": 16,
+    "level": "Intermediate",
+    "description": "MongoDB query etc"
+}

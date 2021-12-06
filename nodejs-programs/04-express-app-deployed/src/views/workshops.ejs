@@ -1,0 +1,28 @@
+<%- include( "partials/header", { pageTitle: pageTitle } ) -%>
+<div class="container">
+  <h1><%= pageTitle %></h1>
+  <hr />
+  <div class="row">
+      <% if( workshops.length === 0 ) { %>
+        <div class="alert alert-info">There are no workshops to show</div>
+      <% } %>
+      <% workshops.forEach( workshop => { %>
+        <div class="col-12 col-md-4 my-3">
+          <div class="card p-2">
+            <img
+              src="<%= workshop.imageUrl %>"
+              class="card-img-top"
+              alt="<%= workshop.name %>"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><%= workshop.name %></h5>
+              <div class="card-text">
+                <%- workshop.description %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+  </div>
+</div>
+<%- include( "partials/footer" ) -%>

@@ -1,0 +1,54 @@
+mongodb+srv://Chandu:<password>@cluster0.nsq2v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+my mongodb password
+PBV7174CUDOBHc2X
+
+MONGO_URI=mongodb+srv://Chandu:PBV7174CUDOBHc2X@cluster0.nsq2v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+razorpay implement
+install the pakeges
+ 1. npm install razorpay
+ 
+ 2. go to razorpay site and genare the keys
+ 
+ https://dashboard.razorpay.com/app/keys
+ 
+ genarete the key and secret keys and
+ 
+ payment_id
+ pay_HrJv7VWT4z74Pg
+ 
+ pay_HrJc04fNaNhSrO
+
+trainer ness git repos
+https://github.com/venu-shastri/
+
+mysql sample poc
+https://www.youtube.com/watch?v=zbMHLJ0dY4w
+https://www.youtube.com/watch?v=WmGgxTpGs_8
+
+
+ 
+pay_HrKRcwoqv9ntGU // captured payment
+
+pay_HrM3tSZP1NgUck
+pay_HrMGKHgIHXDeZs
+ 
+ 
+example repos
+https://github.com/adavijit/AVDOJO-TUTORIALS/tree/master/razor-node
+ 
+ https://github.com/boby-tudu-au6/Projects/tree/master/razorpay
+ 
+ 
+ C:\Users\Hi\AppData\Roaming\npm
+
+
+language translation
+
+https://github.com/hidjou/classsed-react-localization.git
+
+real time chat application
+https://github.com/codersgyan/realtime-comment-system.git

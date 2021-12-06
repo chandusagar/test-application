@@ -1,0 +1,23 @@
+{
+    "location": {
+        "address": "Ness Technologies",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    "name": "MEAN stack 20",
+    "description": "React 17",
+    "startDate": "2021-11-20T00:00:00.000Z",
+    "endDate": "2021-11-24T00:00:00.000Z",
+    "startTime": {
+        "hours": 9,
+        "minutes": 0
+    },
+    "endTime": {
+        "hours": 12,
+        "minutes": 30
+    },
+    "modes": [
+        "classroom"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/2000px-AngularJS_logo.svg.png"
+}

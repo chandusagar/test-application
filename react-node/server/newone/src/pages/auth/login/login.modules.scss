@@ -1,0 +1,60 @@
+.auth-page {
+  .left-buttons {
+    position: absolute;
+    top: 84%;
+    left: 20%;
+  }
+  .left-buttons-b1width {
+    width: 350px;
+  }
+  .left-buttons-button {
+    background-color: #e4e4e4;
+    color: #0c1f41;
+  }
+  .right-ness-logo {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  .right-user-icon {
+    padding-top: 2vh;
+  }
+  .right-user-icon {
+    div {
+      margin: auto;
+      text-align: center;
+    }
+    .spacing {
+      margin-bottom: 2vh;
+    }
+    .right-create-link {
+      padding-top: 5vh;
+    }
+    .right-submit {
+      background-color: #0c1f41;
+      padding: 5px 20px;
+    }
+  }
+
+  .right-footer {
+    div {
+      margin: auto;
+      padding-top: 5vh;
+    }
+  }
+
+  @media (min-height: 600px) {
+    .left-buttons {
+      position: absolute;
+      top: 90%;
+      left: 23%;
+    }
+    .left-buttons-b1width {
+      width: 590px;
+    }
+    .right-user-icon {
+      padding-top: 7vh;
+    }
+  }
+}

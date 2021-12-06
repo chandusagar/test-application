@@ -1,0 +1,44 @@
+.bootstrapTable {
+  border: none;
+
+  :global .table {
+    thead,
+    tbody {
+      th,
+      td {
+        border-right: none;
+        border-left: none;
+      }
+    }
+
+    thead th {
+      border: none;
+      color: #f8f9fa;
+      background: #005792;
+      //   background: transparent;
+    }
+
+    tbody td {
+      vertical-align: middle;
+    }
+  }
+}
+
+.image {
+  width: 100px;
+}
+
+.promoAlert {
+  transition: 0.6s;
+  transition-timing-function: ease;
+  transform: translateX(-130vw);
+}
+
+.showAlert {
+  transform: translateX(0);
+}
+
+.controBtn {
+  padding: 1px 3px;
+  font-size: 11px;
+}

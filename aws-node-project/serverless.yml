@@ -1,0 +1,46 @@
+service: aws-node-project
+
+frameworkVersion: '2'
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: any
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - token
+            allowCredentials: true
+      - http:
+          path: /{proxy+}
+          method: any
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - token
+            allowCredentials: true
+    environment:
+     ACCESS_KEY_ID: AKIAS6YU7IZMG6NODG43
+     SECRET_ACCESS_KEY: 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
+     LAMBDA_FUNCTION_RUNNING: true

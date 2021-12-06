@@ -1,0 +1,6 @@
+.idea
+node_modules/*
+tmp/*
+yarn*log
+.env
+.DS_Store

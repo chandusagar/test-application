@@ -1,0 +1,100 @@
+{ $project: { email: "chandusager43@gmail.com" } }
+
+GATXUWWYDFFHN4SK64F6H3X6UVUCRGMR6BXJ4JAPT2MMG5QI5VRQLQNE
+
+
+
+db.users.aggregate([{$match:{email:"shekar@gmail.com"}}]);
+
+db.users.aggregate([
+{$match:{email:"shekar@gmail.com"}},
+{$project:{firstName:1,lastName:1,email:1}}
+
+    ])
+
+db.users.aggregate([{$count:"total"}])
+
+
+db.users.aggregate([
+{$group:{_id:{firstName:"$firstName",address:"$address"}}}
+])
+
+db.users.aggregate([
+{$sort:{email:1}}
+])
+
+
+db.users.aggregate([
+{$limit:10},
+{$match:{firstName:"shekar"}},
+{$group:{_id:{firstName:"$firstName",address:"$address"}}}
+
+])
+
+
+db.users.aggregate([
+{$unwind:"$address"},
+{$project:{_id:1,firstName:1,lastName:1,email:1}}
+])
+
+
+db.users.aggregate([
+{$unwind:"$roles"},
+{$group:{_id:"$roles"}}
+])   
+
+
+
+ db.getCollection("users").aggregate([
+     { $lookup:
+       {
+         from: 'addresses',
+         localField: '_id',
+         foreignField: 'userId',
+         as: 'address'
+       }
+     }
+     ])
+	 
+	 
+	// multiple collection get data
+	 
+		  db.getCollection("users").aggregate([
+		 { $lookup:
+		   {
+			 from: 'addresses',
+			 localField: '_id',
+			 foreignField: 'userId',
+			 as: 'address'
+		   }
+		 },
+		  { $lookup:
+		   {
+			 from: 'roles',
+			 localField: '_id',
+			 foreignField: 'roleId',
+			 as: 'roles'
+		   }
+		 },
+		 {
+		$unwind: "$address"
+	  },
+	  {
+		$unwind: "$roles"
+	  },
+		 ])
+	 
+	 
+
+	 
+	 
+
+   
+
+
+
+
+
+
+
+
